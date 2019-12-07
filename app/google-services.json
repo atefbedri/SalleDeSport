@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "498654462052",
+    "firebase_url": "https://salledesport-27cee.firebaseio.com",
+    "project_id": "salledesport-27cee",
+    "storage_bucket": "salledesport-27cee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498654462052:android:f721493d14fda70ce05f71",
+        "android_client_info": {
+          "package_name": "com.example.salledesport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "498654462052-okrm1ndrdvnf8s6gfnld2rrjcn4dkbhl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.salledesport",
+            "certificate_hash": "91e7a692bc78ad90666eb387413ec14bc256d894"
+          }
+        },
+        {
+          "client_id": "498654462052-rbu3i20bgqjfv25srddcj880p32sjo3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9pSfyQHJHikNfHmIw56DoNbRybZchmjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "498654462052-rbu3i20bgqjfv25srddcj880p32sjo3a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
