@@ -15,18 +15,18 @@
         android:id="@+id/nav_activite"
         android:name="com.example.salledesport.ui.gallery.GalleryFragment"
         android:label="@string/activite"
-        tools:layout="@layout/activite" />
+        tools:layout="@layout/fragment_activite" />
 
     <fragment
         android:id="@+id/nav_seance"
         android:name="com.example.salledesport.ui.slideshow.SlideshowFragment"
         android:label="@string/consulteseance"
-        tools:layout="@layout/seance" />
+        tools:layout="@layout/fragment_seance" />
 
     <fragment
         android:id="@+id/nav_gestionseance"
         android:name="com.example.salledesport.ui.tools.ToolsFragment"
         android:label="@string/ajoutseance"
-        tools:layout="@layout/gestionseance" />
+        tools:layout="@layout/fragment_gestionseance" />
 
 </navigation>
