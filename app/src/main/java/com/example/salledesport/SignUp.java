@@ -29,7 +29,6 @@ public class SignUp extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        //addUser("fedixdx@outlook.fr","bahta1997@");
         //event on click sur le button add user to database
         findViewById(R.id.buttonSignIn).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,9 +51,7 @@ public class SignUp extends AppCompatActivity {
                 } else if (password.length() < 8) {
                     Toast.makeText(SignUp.this, "MotPass too short", Toast.LENGTH_SHORT).show();
                 } else if (isValidEmail(email)) {
-                    Toast.makeText(SignUp.this, "MotPass too short", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(SignUp.this, "MotPass not the same", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignUp.this, "invalid email", Toast.LENGTH_SHORT).show();
                 }
 
             }

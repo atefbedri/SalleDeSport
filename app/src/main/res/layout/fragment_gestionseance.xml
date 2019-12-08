@@ -17,40 +17,47 @@
             android:text="Gestion Séance"
             android:textAlignment="center"
             android:textSize="30dp" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="Abonne  :"
+            android:text="Séances  :"
             android:layout_marginLeft="10dp"
             android:textSize="15dp" />
 
         <Spinner
-            android:id="@+id/spinner_abonne"
+            android:id="@+id/spinner_seance"
             android:layout_width="match_parent"
             android:layout_height="81dp"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:entries="@array/spinner_seance"/>
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="Coachh  :"
+            android:text="Coach  :"
             android:layout_marginLeft="10dp"
             android:textSize="15dp" />
+
         <Spinner
             android:id="@+id/spinner_coach"
             android:layout_width="match_parent"
             android:layout_height="81dp"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:entries="@array/spinner_coach"/>
 
-        <TextView
+        <Button
+            android:id="@+id/btnS"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="Activities  :"
-            android:layout_marginLeft="10dp"
-            android:textSize="15dp" />
+            android:text="Enregistrer"/>
+
+
+
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
