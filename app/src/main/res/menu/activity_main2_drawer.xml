@@ -12,14 +12,25 @@
             android:id="@+id/nav_seance"
             android:icon="@drawable/ic_fitness"
             android:title="@string/consulteseance" />
-        <item
-            android:id="@+id/nav_activite"
-            android:icon="@drawable/ic_activite"
-            android:title="@string/activite" />
+
         <item
             android:id="@+id/nav_gestionseance"
-            android:icon="@drawable/ic_add"
+            android:icon="@drawable/icon_seance"
             android:title="@string/ajoutseance" />
+        <item
+            android:id="@+id/nav_musculation"
+            android:icon="@drawable/icon_musculation"
+            android:title="@string/musculation" />
+
+        <item
+            android:id="@+id/nav_aerobic"
+            android:icon="@drawable/icon_aerobic"
+            android:title="@string/aerobic" />
+
+        <item
+            android:id="@+id/nav_gymnastique"
+            android:icon="@drawable/icon_gym"
+            android:title="@string/gymnastqiue" />
     </group>
 
 

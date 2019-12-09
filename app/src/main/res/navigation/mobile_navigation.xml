@@ -12,12 +12,6 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_activite"
-        android:name="com.example.salledesport.ui.gallery.GalleryFragment"
-        android:label="@string/activite"
-        tools:layout="@layout/fragment_activite" />
-
-    <fragment
         android:id="@+id/nav_seance"
         android:name="com.example.salledesport.ui.slideshow.SlideshowFragment"
         android:label="@string/consulteseance"
@@ -28,5 +22,21 @@
         android:name="com.example.salledesport.ui.tools.ToolsFragment"
         android:label="@string/ajoutseance"
         tools:layout="@layout/fragment_gestionseance" />
+    <fragment
+        android:id="@+id/nav_musculation"
+        android:name="com.example.salledesport.ui.musculation.musculation"
+        android:label="@string/musculation"
+        tools:layout="@layout/fragment_musculation" />
+    <fragment
+        android:id="@+id/nav_aerobic"
+        android:name="com.example.salledesport.ui.aerobic.aerobic"
+        android:label="@string/aerobic"
+        tools:layout="@layout/fragment_aerobic" />
+    <fragment
+        android:id="@+id/nav_gymnastique"
+        android:name="com.example.salledesport.ui.gymnastique.gymnastique"
+        android:label="@string/gymnastqiue"
+        tools:layout="@layout/fragment_gymnastique" />
+
 
 </navigation>

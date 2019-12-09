@@ -20,6 +20,12 @@
     <string name="activite">Activities</string>
     <string name="ajoutseance">Ajouter Seance</string>
 
+    <string name="musculation">Musculation</string>
+    <string name="aerobic">Aerobic</string>
+    <string name="echauffement">Echauffement</string>
+    <string name="gymnastqiue">Gymnastique</string>
+
+
     <string name="action_disconnect">Disconnect</string>
     <string name="text_description">Votre Activities</string>
 
@@ -30,7 +36,18 @@
     <string name="menu_slideshow">Slideshow</string>
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
+    <string name="ex1">EX1</string>
+    <string name="ex2">EX2</string>
+    <string name="ex3">EX3</string>
+    <string name="ex4">EX4</string>
+    <string name="musculation1">Biceps Curl Assis</string>
+    <string name="musculation2">Biceps Curl Debout</string>
+    <string name="musculation3">Cuisses Fessiers Squat</string>
+    <string name="musculation4">Dos Tirage Un Bras</string>
+    <string name="atr1">A.T.R Ventre Au Mur</string>
+    <string name="atr2">A.T.R Forcé</string>
+    <string name="appui1">En Appui Facial</string>
+    <string name="appui2">En Appui Facial Bassin Haut</string>
 
 
     <string-array name="spinner_seance">

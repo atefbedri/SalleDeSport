@@ -22,6 +22,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -38,8 +39,9 @@ public class Main2Activity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_activite, R.id.nav_seance,
-                R.id.nav_gestionseance)
+                R.id.nav_home, R.id.nav_seance,
+                R.id.nav_gestionseance,R.id.nav_musculation,
+                R.id.nav_aerobic,R.id.nav_gymnastique)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -55,6 +57,7 @@ View main = navigationView.getHeaderView(0);
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main2, menu);
+        Toast.makeText(Main2Activity.this,"Disconnect",Toast.LENGTH_SHORT).show();
 
         return true;
     }
