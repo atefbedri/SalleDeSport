@@ -38,6 +38,8 @@ public class Login extends AppCompatActivity {
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
 
+
+
         // Configure Google Sign In
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
@@ -54,8 +56,12 @@ public class Login extends AppCompatActivity {
 
                 String login = loginView.getText().toString();
                 String password = motPassView.getText().toString();
-
+                if(login.length()<5 || password.length()<8){
+                    Toast.makeText(Login.this, "Invalid login and password", Toast.LENGTH_SHORT).show();
+                }
+                else{
                 login(login, password);
+            }
             }
         });
 

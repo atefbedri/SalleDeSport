@@ -1,18 +1,19 @@
 package com.example.salledesport;
 
+import android.content.Intent;
 import android.os.Bundle;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
+import android.view.MenuItem;
 import android.view.View;
 
+import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -20,9 +21,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -48,6 +46,8 @@ public class Main2Activity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
+
+
 View main = navigationView.getHeaderView(0);
 //        TextView userId = findViewById(R.id.idUser);
 //        userId.setText("hello");
@@ -57,9 +57,20 @@ View main = navigationView.getHeaderView(0);
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main2, menu);
-        Toast.makeText(Main2Activity.this,"Disconnect",Toast.LENGTH_SHORT).show();
-
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+
+        if(item.getItemId()==R.id.action_signOut){
+            FirebaseAuth.getInstance().signOut();
+            Intent myIntent = new Intent(this, Login.class);
+            startActivity(myIntent);
+            finish();
+        }
+    return false;
     }
 
     @Override
@@ -68,4 +79,8 @@ View main = navigationView.getHeaderView(0);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+
+
+
 }

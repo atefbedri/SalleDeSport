@@ -1,4 +1,4 @@
-package com.example.salledesport.ui.slideshow;
+package com.example.salledesport.ui.seance;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

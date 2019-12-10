@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        findViewById(R.id.buttonSignOut).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.action_signOut).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

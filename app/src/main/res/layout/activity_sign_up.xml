@@ -13,8 +13,13 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="-80dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
         <Button
-            android:id="@+id/buttonSignIn"
+            android:id="@+id/bSignIn"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
@@ -23,21 +28,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/conformMotpass"
+            app:layout_constraintTop_toBottomOf="@+id/eCmdp"
             app:layout_constraintVertical_bias="0.058" />
 
-        <EditText
-            android:id="@+id/email"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:hint="@string/email"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.491"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/login" />
+
 
         <ImageView
             android:id="@+id/imageView"
@@ -51,7 +45,7 @@
             app:srcCompat="@mipmap/ic_launcher" />
 
         <EditText
-            android:id="@+id/login"
+            android:id="@+id/eLogin"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
@@ -63,8 +57,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
+            <EditText
+                android:id="@+id/eEmail"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/login" />
+
         <EditText
-            android:id="@+id/motPass"
+            android:id="@+id/eMdp"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -73,10 +80,10 @@
             android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/email" />
+            app:layout_constraintTop_toBottomOf="@+id/eEmail" />
 
         <EditText
-            android:id="@+id/conformMotpass"
+            android:id="@+id/eCmdp"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -86,6 +93,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/motPass" />
+
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

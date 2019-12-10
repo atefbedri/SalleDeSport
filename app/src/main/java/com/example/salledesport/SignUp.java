@@ -21,6 +21,10 @@ import com.google.firebase.auth.FirebaseUser;
 public class SignUp extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
+    EditText loginView;
+    EditText emailView;
+    EditText passwordView;
+    EditText passwordView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,30 +34,32 @@ public class SignUp extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
         //event on click sur le button add user to database
-        findViewById(R.id.buttonSignIn).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.bSignIn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
 
-                EditText loginView = findViewById(R.id.login);
-                EditText emailView = findViewById(R.id.email);
-                EditText passwordView = findViewById(R.id.motPass);
-                EditText passwordView2 = findViewById(R.id.conformMotpass);
+                loginView = findViewById(R.id.eLogin);
+                emailView = findViewById(R.id.eEmail);
+                passwordView = findViewById(R.id.eMdp);
+                passwordView2 = findViewById(R.id.eCmdp);
 
                 String login = loginView.getText().toString();
                 String email = emailView.getText().toString();
                 String password = passwordView.getText().toString();
                 String confirmPassword = passwordView2.getText().toString();
 
-                if (password == confirmPassword) {
-                    //Toast.makeText(SignUp.this, email+" "+password, Toast.LENGTH_SHORT).show();
-                    addUser(email, password);
+                if (password != confirmPassword) {
+                    Toast.makeText(SignUp.this, "MotPass is not the same", Toast.LENGTH_SHORT).show();
+
                 } else if (password.length() < 8) {
                     Toast.makeText(SignUp.this, "MotPass too short", Toast.LENGTH_SHORT).show();
                 } else if (isValidEmail(email)) {
                     Toast.makeText(SignUp.this, "invalid email", Toast.LENGTH_SHORT).show();
+                } else {
+                    addUser(email, password);
+                    goToMain();
                 }
-
             }
         });
     }
