@@ -35,7 +35,7 @@ public class Seance {
         return nomCoach;
     }
 
-    public void setNomCoach(String srcImage) {
-        this.nomCoach = srcImage;
+    public void setNomCoach(String dateSeance) {
+        this.nomCoach = dateSeance;
     }
 }

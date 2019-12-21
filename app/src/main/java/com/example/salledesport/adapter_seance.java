@@ -23,11 +23,14 @@ public class adapter_seance extends ArrayAdapter <Seance>
             convertView = ((Activity) getContext()).getLayoutInflater().inflate(R.layout.item_seance, parent, false);
         }
 
+
+
         TextView date = convertView.findViewById(R.id.item_date);
         TextView seance = convertView.findViewById(R.id.item_seance);
         TextView coach = convertView.findViewById(R.id.item_coach);
 
         Seance currentDemande = getItem(position);
+
 
         date.setText(currentDemande.getDateSeance());
         seance.setText(currentDemande.getNomActivite());

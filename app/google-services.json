@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "498654462052-ogic9ngqtc064v81b729ojgv8h8i5f77.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.salledesport",
+            "certificate_hash": "52a5ccdd19b6bb75b52b6cf61efa2ebcf743ec81"
+          }
+        },
+        {
+          "client_id": "498654462052-02ncgpuc3puev7vcs1imlfe2ao3rnpk8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.salledesport",
+            "certificate_hash": "337ce53e414cb77a2968e3e5f26f93bbe7e919a6"
+          }
+        },
+        {
           "client_id": "498654462052-okrm1ndrdvnf8s6gfnld2rrjcn4dkbhl.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
